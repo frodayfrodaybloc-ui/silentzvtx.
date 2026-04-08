@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>silentzvtx | Content Creator</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(270deg, #0f0f0f, #1a0033, #000000);
+      background-size: 600% 600%;
+      animation: bgMove 15s ease infinite;
+      color: white;
+    }
+
+    @keyframes bgMove {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: url('banner.gif') center/cover no-repeat;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+    }
+
+    header div {
+      position: relative;
+      z-index: 2;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      text-shadow: 0 0 15px #a855f7, 0 0 30px #a855f7;
+    }
+
+    header p {
+      margin: 15px 0;
+      color: #ccc;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background: #ff3c78;
+      border: none;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      box-shadow: 0 0 15px #ff3c78;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px #ff3c78;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+      animation: fadeUp 1s ease;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.2rem;
+      text-shadow: 0 0 10px #ff3c78;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      padding: 20px;
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      transition: 0.3s;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 0 20px #ff3c78;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #ff3c78;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>silentzvtx</h1>
+    <p>Content Creator | Anime & Gaming Communities</p>
+    <a href="#communities" class="btn">View My Work</a>
+  </div>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p style="text-align:center;">
+    Content creator: Anime Vanguard, The Forge, Bite By Night, Hunty Zombies, 
+    Fisch (Soon), Sailor Piece (Soon), Solo Hunter ReAwakened, Bizzare Lineage, 
+    DevilHunters, Anime Warlords, Ghoul RE, Type Soul, Anime Eternal, Mugen, 
+    Raise Animals, Garden Horizon, Blue Heater, Parkour Champion, Manhwa Legends
+  </p>
+</section>
+
+<section id="communities">
+  <h2>My Communities</h2>
+  <div class="grid">
+
+    <div class="card"><h3>Anime Vanguards</h3><a href="https://discord.gg/q7R9uJnvTA" target="_blank">Join →</a></div>
+    <div class="card"><h3>Manhwa Legends</h3><a href="https://discord.gg/mhl" target="_blank">Join →</a></div>
+    <div class="card"><h3>Sailor Piece</h3><a href="https://discord.gg/sailorpiece" target="_blank">Join →</a></div>
+    <div class="card"><h3>Ghoul Re</h3><a href="https://discord.gg/ghoulre" target="_blank">Join →</a></div>
+    <div class="card"><h3>Hunty Zombie</h3><a href="https://discord.gg/HuntyZombie" target="_blank">Join →</a></div>
+    <div class="card"><h3>Fisch</h3><a href="https://discord.gg/fisch" target="_blank">Join →</a></div>
+    <div class="card"><h3>Bite By Night</h3><a href="https://discord.gg/BiteByNight" target="_blank">Join →</a></div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Games I Feature</h2>
+  <div class="grid">
+
+    <div class="card"><h3>Abyss</h3><a href="https://www.roblox.com/games/127794225497302/Abyss" target="_blank">Play →</a></div>
+    <div class="card"><h3>Solo Hunters</h3><a href="https://www.roblox.com/games/136599248168660/Solo-Hunters" target="_blank">Play →</a></div>
+    <div class="card"><h3>King Legacy</h3><a href="https://www.roblox.com/games/4520749081/King-Legacy" target="_blank">Play →</a></div>
+    <div class="card"><h3>Type Soul</h3><a href="https://www.roblox.com/games/14067600077/TYPE-SOUL" target="_blank">Play →</a></div>
+    <div class="card"><h3>The Forge</h3><a href="https://www.roblox.com/games/76558904092080/The-Forge" target="_blank">Play →</a></div>
+    <div class="card"><h3>Peroxide</h3><a href="https://www.roblox.com/games/9096881148/Peroxide" target="_blank">Play →</a></div>
+    <div class="card"><h3>Garden Horizons</h3><a href="https://www.roblox.com/games/130594398886540/Garden-Horizons" target="_blank">Play →</a></div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 silentzvtx</p>
+</footer>
+
+</body>
+</html>
